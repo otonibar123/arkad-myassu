@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Devis Gratuit — MyAssu.fr</title>
+  <meta name="description" content="Demandez votre devis gratuit en quelques minutes. Contactez MyAssu.fr, votre courtier en assurance à Nice.">
+  <meta property="og:title" content="Contact & Devis Gratuit — MyAssu.fr">
+  <meta property="og:description" content="Devis gratuit en 2 minutes. Courtier en assurance à Nice.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://myassu.fr/contact.html">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="canonical" href="https://myassu.fr/contact.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text"><span class="logo-my">MY</span><span class="logo-assu">ASSU</span><span class="logo-fr">.FR</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="assurance-auto.html">Auto</a></li>
+        <li><a href="assurance-moto.html">Moto</a></li>
+        <li><a href="assurance-habitation.html">Habitation</a></li>
+        <li><a href="assurance-decennale.html">Décennale</a></li>
+        <li><a href="credit-rachat.html">Crédit & Rachat</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="http://www.gestion-assurances.com/clients/pages/spc_connexion_client.aspx?Domaine=myassu.fr" class="btn btn-sm btn-outline">Espace Client</a></li>
+        <li><a href="contact.html" class="btn btn-sm btn-primary">Devis Gratuit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="section-tag">Contact & Devis</span>
+        <h1>Obtenez votre devis <span class="text-gradient">en 2 minutes</span></h1>
+        <p>Remplissez le formulaire ci-dessous et recevez une proposition personnalisée sous 24h. Sans engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORMULAIRE -->
+        <div class="contact-form-wrapper">
+          <!-- TABS -->
+          <div class="form-tabs">
+            <button class="form-tab active" data-tab="devis">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Devis gratuit
+            </button>
+            <button class="form-tab" data-tab="contact">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Nous contacter
+            </button>
+          </div>
+
+          <!-- DEVIS FORM -->
+          <form class="form-panel active" id="devisForm" data-panel="devis">
+            <div class="form-group">
+              <label for="devis-type">Type d'assurance</label>
+              <div class="insurance-selector">
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="auto" checked>
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    Auto
+                  </span>
+                </label>
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="moto">
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/></svg>
+                    Moto
+                  </span>
+                </label>
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="habitation">
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Habitation
+                  </span>
+                </label>
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="decennale">
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>
+                    Décennale
+                  </span>
+                </label>
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="rc-pro">
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    RC Pro
+                  </span>
+                </label>
+                <label class="insurance-option">
+                  <input type="radio" name="insurance_type" value="credit">
+                  <span class="insurance-chip">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Crédit
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="devis-nom">Nom complet</label>
+                <input type="text" id="devis-nom" name="nom" placeholder="Jean Dupont" required>
+              </div>
+              <div class="form-group">
+                <label for="devis-tel">Téléphone</label>
+                <input type="tel" id="devis-tel" name="telephone" placeholder="06 12 34 56 78" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="devis-email">Email</label>
+              <input type="email" id="devis-email" name="email" placeholder="jean@exemple.fr" required>
+            </div>
+            <div class="form-group">
+              <label for="devis-message">Précisions (optionnel)</label>
+              <textarea id="devis-message" name="message" rows="4" placeholder="Décrivez votre besoin : véhicule, date de permis, type de bien..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="devis-fichier" class="file-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                Joindre un document
+              </label>
+              <input type="file" id="devis-fichier" name="fichier" class="file-input" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <span class="file-name" id="devisFileName">Aucun fichier sélectionné</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Envoyer ma demande de devis
+            </button>
+          </form>
+
+          <!-- CONTACT FORM -->
+          <form class="form-panel" id="contactForm" data-panel="contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-nom">Nom complet</label>
+                <input type="text" id="contact-nom" name="nom" placeholder="Jean Dupont" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-tel">Téléphone</label>
+                <input type="tel" id="contact-tel" name="telephone" placeholder="06 12 34 56 78" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="jean@exemple.fr" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-sujet">Sujet</label>
+              <select id="contact-sujet" name="sujet" required>
+                <option value="" disabled selected>Choisissez un sujet</option>
+                <option value="info">Demande d'information</option>
+                <option value="sinistre">Déclaration de sinistre</option>
+                <option value="modification">Modification de contrat</option>
+                <option value="resiliation">Résiliation</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="contact-fichier" class="file-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+                Joindre un document
+              </label>
+              <input type="file" id="contact-fichier" name="fichier" class="file-input" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+              <span class="file-name" id="contactFileName">Aucun fichier sélectionné</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Envoyer mon message
+            </button>
+          </form>
+
+          <!-- SUCCESS MESSAGE -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Demande envoyée !</h3>
+            <p>Nous vous recontactons sous 24h. Merci pour votre confiance.</p>
+          </div>
+        </div>
+
+        <!-- SIDEBAR INFOS -->
+        <aside class="contact-sidebar">
+          <div class="sidebar-card">
+            <h3>Besoin d'aide rapide ?</h3>
+            <p>Notre équipe est disponible pour vous accompagner.</p>
+            <div class="sidebar-items">
+              <a href="tel:0987076305" class="sidebar-item">
+                <div class="sidebar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <strong>Téléphone</strong>
+                  <span>09 87 07 63 05</span>
+                </div>
+              </a>
+              <a href="mailto:contact@myassu.fr" class="sidebar-item">
+                <div class="sidebar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <span>contact@myassu.fr</span>
+                </div>
+              </a>
+              <a href="https://wa.me/33987076305" target="_blank" rel="noopener" class="sidebar-item">
+                <div class="sidebar-icon sidebar-icon--whatsapp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span>Discuter maintenant</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Horaires</h3>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span>Lundi — Vendredi</span>
+                <strong>10h — 20h</strong>
+              </div>
+              <div class="hours-row">
+                <span>Samedi</span>
+                <strong>10h — 18h</strong>
+              </div>
+              <div class="hours-row hours-closed">
+                <span>Dimanche</span>
+                <strong>Fermé</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-card sidebar-card--dark">
+            <div class="sidebar-badge">Conseil</div>
+            <h3>Vous ne savez pas quelle assurance choisir ?</h3>
+            <p>Appelez-nous, un conseiller dédié analyse votre situation gratuitement et vous oriente vers la meilleure couverture.</p>
+            <a href="tel:0987076305" class="btn btn-white btn-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Être rappelé
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-wrapper">
+        <div class="map-info">
+          <h3>Nous trouver</h3>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            37 Bd Dubouchage, 06000 Nice
+          </p>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.5!2d7.2685!3d43.7010!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd01024e3d289%3A0x3fa8e8a7b0b5dbb!2s37+Boulevard+Dubouchage%2C+06000+Nice!5e0!3m2!1sfr!2sfr!4v1"
+            width="100%" height="320" style="border:0;border-radius:16px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="MyAssu.fr — 37 Bd Dubouchage, Nice"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text footer-logo"><span class="logo-my">MY</span><span class="logo-assu">ASSU</span><span class="logo-fr">.FR</span></span>
+          <p>Votre courtier en banque et assurance de proximité à Nice. Le meilleur rapport garantie/prix depuis plus de 15 ans.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/myassu.myassu.1/" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Assurances</h4>
+          <ul>
+            <li><a href="assurance-auto.html">Auto</a></li>
+            <li><a href="assurance-moto.html">Moto</a></li>
+            <li><a href="assurance-habitation.html">Habitation</a></li>
+            <li><a href="assurance-decennale.html">Décennale</a></li>
+            <li><a href="https://myassurance.plussimple.fr/assurances">RC Pro</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="credit-rachat.html">Crédit & Rachat</a></li>
+            <li><a href="https://myassu.fr/Assurance-Microblading/">Microblading</a></li>
+            <li><a href="http://www.gestion-assurances.com/clients/pages/spc_connexion_client.aspx?Domaine=myassu.fr">Espace Client</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              37 Bd Dubouchage, 06000 Nice
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:0987076305">09 87 07 63 05</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:contact@myassu.fr">contact@myassu.fr</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Lun-Sam : 10h — 20h
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MyAssu.fr — Courtier en banque et assurance. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING -->
+  <a href="https://wa.me/33987076305" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

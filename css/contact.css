@@ -1,0 +1,128 @@
+/* ============================================
+   Contact & Devis Page
+   ============================================ */
+
+/* PAGE HERO */
+.page-hero{padding:140px 0 60px;background:var(--gray-50)}
+.page-hero-content{max-width:640px}
+.page-hero-content h1{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.15;margin-bottom:16px}
+.page-hero-content p{font-size:1.1rem;color:var(--gray-500);line-height:1.7}
+
+/* CONTACT SECTION */
+.contact-section{padding:60px 0 100px;background:var(--gray-50)}
+.contact-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+
+/* FORM WRAPPER */
+.contact-form-wrapper{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);overflow:hidden}
+
+/* TABS */
+.form-tabs{display:flex;border-bottom:1px solid var(--gray-200)}
+.form-tab{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:18px 20px;font-size:.938rem;font-weight:600;color:var(--gray-500);background:none;border:none;cursor:pointer;transition:all var(--transition);position:relative}
+.form-tab::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--gradient);transform:scaleX(0);transition:transform var(--transition)}
+.form-tab:hover{color:var(--dark);background:var(--gray-50)}
+.form-tab.active{color:var(--primary)}
+.form-tab.active::after{transform:scaleX(1)}
+.form-tab svg{flex-shrink:0}
+
+/* FORM PANELS */
+.form-panel{display:none;padding:32px}
+.form-panel.active{display:block}
+
+/* FORM ELEMENTS */
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:.875rem;font-weight:600;color:var(--dark);margin-bottom:8px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea{width:100%;padding:14px 16px;font-family:inherit;font-size:.938rem;color:var(--dark);background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius);transition:all var(--transition);outline:none;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--gray-400)}
+input:focus,select:focus,textarea:focus{border-color:var(--primary);background:var(--white);box-shadow:0 0 0 4px rgba(26,86,219,.1)}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+
+/* INSURANCE SELECTOR */
+.insurance-selector{display:flex;flex-wrap:wrap;gap:10px}
+.insurance-option{cursor:pointer}
+.insurance-option input{position:absolute;opacity:0;pointer-events:none}
+.insurance-chip{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;font-size:.875rem;font-weight:500;color:var(--dark-600);background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-full);transition:all var(--transition)}
+.insurance-chip:hover{border-color:var(--primary);color:var(--primary)}
+.insurance-option input:checked+.insurance-chip{background:var(--primary-light);border-color:var(--primary);color:var(--primary);font-weight:600}
+
+/* FILE INPUT */
+.file-input{position:absolute;opacity:0;width:0;height:0}
+.file-label{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:500;color:var(--primary);cursor:pointer;padding:10px 16px;border:1.5px dashed var(--gray-300);border-radius:var(--radius);transition:all var(--transition)}
+.file-label:hover{border-color:var(--primary);background:var(--primary-light)}
+.file-name{display:block;font-size:.813rem;color:var(--gray-400);margin-top:6px}
+
+/* SUBMIT */
+.btn-full{width:100%;justify-content:center}
+
+/* SUCCESS */
+.form-success{display:none;text-align:center;padding:60px 32px}
+.form-success.visible{display:block}
+.success-icon{width:80px;height:80px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border-radius:50%;background:var(--primary-light);color:var(--primary)}
+.form-success h3{font-size:1.4rem;font-weight:700;margin-bottom:8px}
+.form-success p{color:var(--gray-500);font-size:1rem}
+
+/* ============================================
+   SIDEBAR
+   ============================================ */
+.contact-sidebar{display:flex;flex-direction:column;gap:20px}
+.sidebar-card{padding:28px;border-radius:var(--radius-lg);background:var(--white);border:1px solid var(--gray-200);box-shadow:var(--shadow-sm)}
+.sidebar-card h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.sidebar-card>p{font-size:.875rem;color:var(--gray-500);line-height:1.6;margin-bottom:20px}
+
+/* Sidebar items */
+.sidebar-items{display:flex;flex-direction:column;gap:4px}
+.sidebar-item{display:flex;align-items:center;gap:14px;padding:14px 12px;border-radius:var(--radius);transition:all var(--transition)}
+.sidebar-item:hover{background:var(--gray-50)}
+.sidebar-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--primary-light);color:var(--primary);flex-shrink:0;transition:all var(--transition)}
+.sidebar-icon--whatsapp{background:rgba(37,211,102,.1);color:#25d366}
+.sidebar-item:hover .sidebar-icon{background:var(--gradient);color:var(--white)}
+.sidebar-item:hover .sidebar-icon--whatsapp{background:#25d366;color:var(--white)}
+.sidebar-item div strong{display:block;font-size:.875rem;font-weight:600;color:var(--dark)}
+.sidebar-item div span{font-size:.813rem;color:var(--gray-500)}
+
+/* Hours */
+.hours-list{display:flex;flex-direction:column;gap:12px}
+.hours-row{display:flex;justify-content:space-between;align-items:center;font-size:.875rem}
+.hours-row span{color:var(--gray-500)}
+.hours-row strong{color:var(--dark)}
+.hours-closed strong{color:var(--gray-400)}
+
+/* Dark card */
+.sidebar-card--dark{background:var(--gradient);border:none;color:var(--white)}
+.sidebar-card--dark h3{color:var(--white)}
+.sidebar-card--dark p{color:rgba(255,255,255,.8)}
+.sidebar-badge{display:inline-block;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.2);padding:4px 12px;border-radius:var(--radius-full);margin-bottom:12px}
+
+/* ============================================
+   MAP
+   ============================================ */
+.map-section{padding:0 0 100px;background:var(--gray-50)}
+.map-wrapper{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-md);overflow:hidden}
+.map-info{padding:28px 32px;display:flex;align-items:center;gap:24px;border-bottom:1px solid var(--gray-200)}
+.map-info h3{font-size:1.1rem;font-weight:700;white-space:nowrap}
+.map-info p{display:flex;align-items:center;gap:8px;font-size:.938rem;color:var(--gray-500)}
+.map-embed{line-height:0}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media(max-width:1024px){
+  .contact-grid{grid-template-columns:1fr;gap:32px}
+  .contact-sidebar{order:-1;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .sidebar-card--dark{grid-column:1/-1}
+}
+
+@media(max-width:768px){
+  .page-hero{padding:120px 0 40px}
+  .contact-section{padding:40px 0 60px}
+  .form-row{grid-template-columns:1fr}
+  .insurance-selector{gap:8px}
+  .insurance-chip{padding:8px 14px;font-size:.813rem}
+  .contact-sidebar{grid-template-columns:1fr}
+  .map-info{flex-direction:column;gap:8px;align-items:flex-start}
+}
