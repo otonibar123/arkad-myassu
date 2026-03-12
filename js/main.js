@@ -41,6 +41,51 @@ document.querySelectorAll('.service-card, .advantage-card, .stat-item, .cta-card
   observer.observe(el);
 });
 
+// Callback modal
+const callbackOverlay = document.getElementById('callbackModal');
+if (callbackOverlay) {
+  const callbackForm = document.getElementById('callbackForm');
+  const callbackSuccess = document.getElementById('callbackSuccess');
+
+  // Open
+  document.querySelectorAll('.callback-float').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      callbackOverlay.classList.add('active');
+    });
+  });
+
+  // Close on X button
+  callbackOverlay.querySelector('.modal-close').addEventListener('click', () => {
+    callbackOverlay.classList.remove('active');
+  });
+
+  // Close on overlay click
+  callbackOverlay.addEventListener('click', (e) => {
+    if (e.target === callbackOverlay) callbackOverlay.classList.remove('active');
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') callbackOverlay.classList.remove('active');
+  });
+
+  // Submit
+  callbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    callbackForm.style.display = 'none';
+    callbackSuccess.classList.add('visible');
+    setTimeout(() => {
+      callbackOverlay.classList.remove('active');
+      setTimeout(() => {
+        callbackForm.style.display = '';
+        callbackForm.reset();
+        callbackSuccess.classList.remove('visible');
+      }, 300);
+    }, 2500);
+  });
+}
+
 // Animated counters
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

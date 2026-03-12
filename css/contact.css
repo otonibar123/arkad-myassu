@@ -2,11 +2,7 @@
    Contact & Devis Page
    ============================================ */
 
-/* PAGE HERO */
-.page-hero{padding:140px 0 60px;background:var(--gray-50)}
-.page-hero-content{max-width:640px}
-.page-hero-content h1{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:800;line-height:1.15;margin-bottom:16px}
-.page-hero-content p{font-size:1.1rem;color:var(--gray-500);line-height:1.7}
+/* PAGE HERO — contact uses shared page-hero styles from pages.css */
 
 /* CONTACT SECTION */
 .contact-section{padding:60px 0 100px;background:var(--gray-50)}
